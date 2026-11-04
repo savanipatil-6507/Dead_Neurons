@@ -5,9 +5,9 @@ A PyTorch research project that detects inactive ReLU neurons, attempts to reviv
 
 The pipeline compares three models:
 
-1. **Baseline** — trained CNN before intervention.
-2. **Recovered** — baseline after synaptic stripping and fine-tuning.
-3. **Pruned** — recovered model after importance testing, structural pruning, and final fine-tuning.
+1. Baseline — trained CNN before intervention.
+2. Recovered — baseline after synaptic stripping and fine-tuning.
+3. Pruned — recovered model after importance testing, structural pruning, and final fine-tuning.
 
 ## Overview
 
@@ -31,7 +31,7 @@ Gradually prune selected neurons
 Fine-tune and evaluate
 ```
 
-A neuron is considered **dead** when its post-ReLU output is exactly zero for every image in a fixed calibration set. For convolutional layers, this condition also applies across all spatial positions. This definition is specific to the calibration set and does not prove inactivity on every possible input.
+A neuron is considered dead when its post-ReLU output is exactly zero for every image in a fixed calibration set. For convolutional layers, this condition also applies across all spatial positions. This definition is specific to the calibration set and does not prove inactivity on every possible input.
 
 ## Methodology
 
@@ -82,7 +82,7 @@ The pruned model is fine-tuned and compared with the baseline and recovered mode
 
 ## Dataset
 
-The project uses **CIFAR-100** through Torchvision.
+The project uses CIFAR-100 through Torchvision.
 
 | Split | Images | Purpose |
 |---|---:|---|
