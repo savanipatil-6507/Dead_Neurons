@@ -15,7 +15,7 @@ A ReLU neuron may produce zero output across observed inputs, leaving part of a 
 
 The workflow is:
 
-```text
+
 CIFAR-100
     ↓
 Train baseline CNN
